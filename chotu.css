@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Klunder Script Bold';
-  src: url('fooont/Klunder\ Script\ Regular.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Klunder Script Bold';
+    src: url('fooont/Klunder Script Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
-  body {
+body {
     font-family: 'Klunder Script Bold', Arial, sans-serif;
     background-color: rgb(115, 238, 115);
 }
@@ -38,7 +38,7 @@
     border-radius: 8px;
 }
 .flip-card-front {
-    background-image: url(bg.webp);
+    background-image: url('bg.webp');
     background-size: cover;
     background-position: center;
     color: black;
