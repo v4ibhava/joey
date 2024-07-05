@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Klunder Script Bold';
+  src: url('/fooont/Klunder\ Script\ Regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+  body {
+    font-family: 'Klunder Script Bold', Arial, sans-serif;
+    background-color: rgb(115, 238, 115);
+}
+.flip-card {
+    margin: auto;
+    width: 450px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 8px;
+    margin-top: 15vw;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 12px 35px -6px;
+    border-radius: 8px;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+.flip-card-front {
+    background-image: url(/bg.webp);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.flip-card-back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/bkbg.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Adjust the blur amount */
+    z-index: 1;
+}
+.back_details {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    margin-top: 17%;
+    margin-left: 50px;
+}
+.details {
+    text-align: left;
+    margin-top: 17%;
+    margin-left: 50px;
+}
+#joey {
+    height: 200px;
+    margin-top: 35%;
+    margin-left: 20%;
+    border-radius: 8%;
+    box-shadow: 0 10px 50px -3px;
+}
