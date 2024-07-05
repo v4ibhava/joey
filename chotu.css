@@ -38,7 +38,7 @@
     border-radius: 8px;
 }
 .flip-card-front {
-    background-image: url(/bg.webp);
+    background-image: url(bg.webp);
     background-size: cover;
     background-position: center;
     color: black;
@@ -57,7 +57,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/bkbg.webp');
+    background-image: url('bkbg.webp');
     background-size: cover;
     background-position: center;
     filter: blur(3px); /* Adjust the blur amount */
