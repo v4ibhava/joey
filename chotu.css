@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Klunder Script Bold';
-  src: url('/fooont/Klunder\ Script\ Regular.woff') format('woff');
+  src: url('fooont/Klunder\ Script\ Regular.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
